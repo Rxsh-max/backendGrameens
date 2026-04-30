@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://grameen-liard.vercel.app',
+  origin: "*"
 }));
 app.use(express.json({ limit: '10mb' })); 
 
