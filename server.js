@@ -7,7 +7,13 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "*"
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://grameen-fpo.netlify.app",
+    process.env.FRONTEND_URL || ""
+  ],
+  credentials: true
 }));
 app.use(express.json({ limit: '10mb' })); 
 
