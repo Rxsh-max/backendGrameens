@@ -12,6 +12,8 @@ app.use(
       "http://localhost:3000",
       "http://localhost:5173",
       "https://grameen-fpo.netlify.app",
+      "https://grameenfpo.vercel.app",
+      "https://backendgrameens.onrender.com",
       process.env.FRONTEND_URL || "",
     ],
     credentials: true,
